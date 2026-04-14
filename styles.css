@@ -687,14 +687,14 @@ a { text-decoration: none; }
 
 /* Dark Cards for carousel */
 .card-dark {
-  background: var(--primary-light);
+  background: var(--primary);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-xl);
   min-height: 280px;
-  border: 1px solid rgba(102, 252, 225, 0.15);
+  border: 1px solid rgba(102, 252, 225, 0.1);
 }
 
 .card-dark-image {
@@ -708,18 +708,37 @@ a { text-decoration: none; }
 .card-dark-content {
   flex: 1;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-dark-content h3 {
   color: var(--white);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
   font-size: 1.5rem;
 }
 
 .card-dark-content p {
-  color: var(--gray-light);
+  color: var(--white);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.card-dark-content .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: auto;
+}
+
+.tech-tag {
+  background: rgba(102, 252, 225, 0.15);
+  color: var(--accent);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 /* ==========================================
@@ -1193,6 +1212,7 @@ a { text-decoration: none; }
   
   .card-dark-content {
     text-align: center;
+    align-items: center;
   }
   
   .card-white {
