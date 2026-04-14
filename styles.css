@@ -1,0 +1,78 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0D1B2A;
+  color: #E0E6ED;
+}
+
+/* Navbar */
+header {
+  background: #0D1B2A;
+  border-bottom: 1px solid #1B4F72;
+}
+
+/* Links */
+a {
+  color: #2E86C1;
+  text-decoration: none;
+}
+
+/* Botones */
+.btn {
+  background: #2E86C1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1B4F72;
+}
+
+/* Cards */
+.card {
+  background: #1B4F72;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Animación */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Carrusel */
+.carousel {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1B4F72;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left { left: -50px; }
+.right { right: -50px; }

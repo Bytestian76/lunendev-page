@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div style="display:flex;justify-content:space-between;padding:15px;">
+    <h2>LUNEN DEV</h2>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section style="text-align:center;padding:50px;">
+  <h1>Servicios</h1>
+
+  <div class="carousel">
+
+    <button class="arrow left" onclick="cambiarSlide(-1)">◀</button>
+
+    <div class="slide card fade-in">
+      <h3>Landing Pages</h3>
+      <p>Diseñadas para convertir visitas en clientes.</p>
+    </div>
+
+    <div class="slide card fade-in" style="display:none;">
+      <h3>Desarrollo Web</h3>
+      <p>Sitios rápidos, modernos y responsive.</p>
+    </div>
+
+    <div class="slide card fade-in" style="display:none;">
+      <h3>SEO</h3>
+      <p>Posicionamiento en Google.</p>
+    </div>
+
+    <button class="arrow right" onclick="cambiarSlide(1)">▶</button>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
