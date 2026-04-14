@@ -48,32 +48,41 @@
       </div>
       
       <div class="carousel-container fade-in">
+        <button class="carousel-arrow carousel-arrow-left" onclick="moveCarousel('carousel-projects', -1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
         <div class="carousel">
           <div class="carousel-track" id="carousel-projects">
             <div class="carousel-slide">
-              <div class="card-white">
-                <h3>E-commerce para Tienda Local</h3>
-                <p>Tienda online completa con pasarela de pagos y gestión de inventario.</p>
+              <div class="card-dark">
+                <img src="branding/nufi.png" alt="Sistema NUFI" class="card-dark-image">
+                <div class="card-dark-content">
+                  <h3>Sistema Agrícola NUFI</h3>
+                  <p>Sistema de gestión de inventario, facturación, pagos, reportes y movimientos.</p>
+                </div>
               </div>
             </div>
             <div class="carousel-slide">
-              <div class="card-white">
-                <h3>Landing para Startup Tech</h3>
-                <p>Página de captación con alto rendimiento en conversiones.</p>
+              <div class="card-dark">
+                <div class="card-dark-content">
+                  <h3>E-commerce para Tienda Local</h3>
+                  <p>Tienda online completa con pasarela de pagos y gestión de inventario.</p>
+                </div>
               </div>
             </div>
             <div class="carousel-slide">
-              <div class="card-white">
-                <h3>Sistema de Gestión</h3>
-                <p>Automatización de procesos administrativos para empresa de servicios.</p>
+              <div class="card-dark">
+                <div class="card-dark-content">
+                  <h3>Landing para Startup Tech</h3>
+                  <p>Página de captación con alto rendimiento en conversiones.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-nav">
-          <button class="carousel-btn" onclick="moveCarousel('carousel-projects', -1)"><i class="fas fa-chevron-left"></i></button>
-          <button class="carousel-btn" onclick="moveCarousel('carousel-projects', 1)"><i class="fas fa-chevron-right"></i></button>
-        </div>
+        <button class="carousel-arrow carousel-arrow-right" onclick="moveCarousel('carousel-projects', 1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </div>
   </section>
