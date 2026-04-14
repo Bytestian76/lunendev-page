@@ -1,15 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos - LunenDev</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%2366FCE1' d='M50 10C30 10 15 30 15 50s15 40 35 40c10 0 19-4 26-11-4 2-9 3-14 3C32 82 15 65 15 45S32 8 62 8c7 0 14 1 20 4-5-3-12-5-19-5-15 0-27 12-27 27 0 6 2 12 5 17-4-6-6-13-6-21 0-20 16-36 36-36s36 16 36 36-16 36-36 36c-2 0-4 0-6-1 3 1 7 1 10 1 20 0 36-16 36-36S70 10 50 10z'/></svg>" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<section class="fade-in" style="padding:50px;">
-  <h1>Proyectos</h1>
-  <p>Aquí irán tus trabajos.</p>
-</section>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="branding/luna-removebg-preview.png" alt="LunenDev Logo" class="logo-img">
+        <img src="branding/letrero_lunen-removebg-preview.png" alt="LunenDev" class="logo-text">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home nav-icon"></i> Inicio</a></li>
+        <li><a href="servicios.html"><i class="fas fa-laptop-code nav-icon"></i> Servicios</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-users nav-icon"></i> Nosotros</a></li>
+        <li><a href="proyectos.html" class="active"><i class="fas fa-folder-open nav-icon"></i> Proyectos</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope nav-icon"></i> Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-<script src="script.js"></script>
+  <section class="hero hero-centered">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <h1>Nuestros Proyectos</h1>
+        <p>Trabajos que hablan por sí mismos</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Proyectos Destacados</h2>
+        <p>Cada proyecto es una historia de éxito compartida con nuestros clientes</p>
+      </div>
+      
+      <div class="carousel-container fade-in">
+        <div class="carousel">
+          <div class="carousel-track" id="carousel-projects">
+            <div class="carousel-slide">
+              <div class="card-white">
+                <h3>E-commerce para Tienda Local</h3>
+                <p>Tienda online completa con pasarela de pagos y gestión de inventario.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="card-white">
+                <h3>Landing para Startup Tech</h3>
+                <p>Página de captación con alto rendimiento en conversiones.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="card-white">
+                <h3>Sistema de Gestión</h3>
+                <p>Automatización de procesos administrativos para empresa de servicios.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" onclick="moveCarousel('carousel-projects', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn" onclick="moveCarousel('carousel-projects', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split-section">
+        <div class="split-content fade-in">
+          <h2>¿Tienes un proyecto en mente?</h2>
+          <p>Únete a nuestra lista de clientes satisfechos. Hagamos realidad tu idea.</p>
+          <a href="contacto.html" class="btn btn-primary" style="margin-top: var(--space-lg);">Comenzar proyecto</a>
+        </div>
+        <div class="split-image fade-in">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Proyectos web">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 LunenDev. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573185990771" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp" style="font-size: 32px;"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>

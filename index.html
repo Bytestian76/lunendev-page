@@ -2,29 +2,102 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunenDev - Soluciones Digitales</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%2366FCE1' d='M50 10C30 10 15 30 15 50s15 40 35 40c10 0 19-4 26-11-4 2-9 3-14 3C32 82 15 65 15 45S32 8 62 8c7 0 14 1 20 4-5-3-12-5-19-5-15 0-27 12-27 27 0 6 2 12 5 17-4-6-6-13-6-21 0-20 16-36 36-36s36 16 36 36-16 36-36 36c-2 0-4 0-6-1 3 1 7 1 10 1 20 0 36-16 36-36S70 10 50 10z'/></svg>" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<header>
-  <div style="display:flex;justify-content:space-between;padding:15px;">
-    <h2>LUNEN DEV</h2>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="sevicios.html">Servicios</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</header>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="branding/luna-removebg-preview.png" alt="LunenDev Logo" class="logo-img">
+        <img src="branding/letrero_lunen-removebg-preview.png" alt="LunenDev" class="logo-text">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active"><i class="fas fa-home nav-icon"></i> Inicio</a></li>
+        <li><a href="servicios.html"><i class="fas fa-laptop-code nav-icon"></i> Servicios</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-users nav-icon"></i> Nosotros</a></li>
+        <li><a href="proyectos.html"><i class="fas fa-folder-open nav-icon"></i> Proyectos</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope nav-icon"></i> Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-<section class="fade-in" style="text-align:center;padding:80px;">
-  <h1>Desarrollamos soluciones digitales</h1>
-  <p>Webs modernas, rápidas y enfocadas en vender</p>
-  <a href="https://wa.me/57TU_NUMERO" class="btn">WhatsApp</a>
-</section>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Transformamos ideas en experiencias digitales</h1>
+        <p>Desarrollamos webs modernas, rápidas y enfocadas en convertir visitantes en clientes.</p>
+        <div class="hero-buttons">
+          <a href="contacto.html" class="btn btn-primary">Solicitar cotización</a>
+          <a href="https://wa.me/573185990771" target="_blank" class="btn btn-secondary">Hablar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Desarrollo web">
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones digitales diseñadas para impulsar tu negocio</p>
+        <a href="servicios.html" class="btn btn-dark" style="margin-top: var(--space-lg);">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split-section">
+        <div class="split-content fade-in">
+          <h2>¿Listo para empezar?</h2>
+          <p>Contáctanos hoy y hagamos realidad tu proyecto digital.</p>
+          <div class="contact-highlight">
+            <div class="contact-item">
+              <i class="fab fa-whatsapp contact-icon"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>+57 318 599 0771</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <div>
+                <strong>Email</strong>
+                <p>sebas.urenasilva@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <a href="contacto.html" class="btn btn-primary" style="margin-top: var(--space-lg);">Ir a Contacto</a>
+        </div>
+        <div class="split-image fade-in">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80" alt="Contacto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 LunenDev. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573185990771" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp" style="font-size: 32px;"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>

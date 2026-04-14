@@ -1,15 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - LunenDev</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%2366FCE1' d='M50 10C30 10 15 30 15 50s15 40 35 40c10 0 19-4 26-11-4 2-9 3-14 3C32 82 15 65 15 45S32 8 62 8c7 0 14 1 20 4-5-3-12-5-19-5-15 0-27 12-27 27 0 6 2 12 5 17-4-6-6-13-6-21 0-20 16-36 36-36s36 16 36 36-16 36-36 36c-2 0-4 0-6-1 3 1 7 1 10 1 20 0 36-16 36-36S70 10 50 10z'/></svg>" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<section class="fade-in" style="padding:50px;">
-  <h1>¿Quiénes somos?</h1>
-  <p>Somos un equipo que crea soluciones digitales modernas.</p>
-</section>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="branding/luna-removebg-preview.png" alt="LunenDev Logo" class="logo-img">
+        <img src="branding/letrero_lunen-removebg-preview.png" alt="LunenDev" class="logo-text">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home nav-icon"></i> Inicio</a></li>
+        <li><a href="servicios.html"><i class="fas fa-laptop-code nav-icon"></i> Servicios</a></li>
+        <li><a href="nosotros.html" class="active"><i class="fas fa-users nav-icon"></i> Nosotros</a></li>
+        <li><a href="proyectos.html"><i class="fas fa-folder-open nav-icon"></i> Proyectos</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope nav-icon"></i> Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-<script src="script.js"></script>
+  <section class="hero hero-centered">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <h1>Sobre LunenDev</h1>
+        <p>Transformamos ideas en experiencias digitales que generan resultados</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="split-section">
+        <div class="split-content fade-in">
+          <h2>Nuestra Misión</h2>
+          <p>Ayudar a negocios y emprendedores a crecer a través de soluciones digitales de alta calidad. No solo creamos páginas web; creamos experiencias que conectan marcas con sus clientes.</p>
+          <p>Cada proyecto es un nuevo desafío que abordamos con creatividad, estrategia y compromiso total.</p>
+        </div>
+        <div class="split-image fade-in">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Equipo de trabajo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Nuestros Valores</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card fade-in">
+          <div class="icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Enfoque</h3>
+          <p>Cada proyecto es único. Creamos estrategias a medida.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="icon"><i class="fas fa-bolt"></i></div>
+          <h3>Velocidad</h3>
+          <p>Resultados rápidos sin sacrificar calidad.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="icon"><i class="fas fa-handshake"></i></div>
+          <h3>Compromiso</h3>
+          <p>Tu éxito es nuestro éxito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Hagamos algo increíble juntos</p>
+        <a href="contacto.html" class="btn btn-dark" style="margin-top: var(--space-lg);">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 LunenDev. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573185990771" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp" style="font-size: 32px;"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>

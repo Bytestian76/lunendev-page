@@ -2,51 +2,107 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - LunenDev</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%2366FCE1' d='M50 10C30 10 15 30 15 50s15 40 35 40c10 0 19-4 26-11-4 2-9 3-14 3C32 82 15 65 15 45S32 8 62 8c7 0 14 1 20 4-5-3-12-5-19-5-15 0-27 12-27 27 0 6 2 12 5 17-4-6-6-13-6-21 0-20 16-36 36-36s36 16 36 36-16 36-36 36c-2 0-4 0-6-1 3 1 7 1 10 1 20 0 36-16 36-36S70 10 50 10z'/></svg>" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<header>
-  <div style="display:flex;justify-content:space-between;padding:15px;">
-    <h2>LUNEN DEV</h2>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-<section style="text-align:center;padding:50px;">
-  <h1>Servicios</h1>
-
-  <div class="carousel">
-
-    <button class="arrow left" onclick="cambiarSlide(-1)">◀</button>
-
-    <div class="slide card fade-in">
-      <h3>Landing Pages</h3>
-      <p>Diseñadas para convertir visitas en clientes.</p>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="branding/luna-removebg-preview.png" alt="LunenDev Logo" class="logo-img">
+        <img src="branding/letrero_lunen-removebg-preview.png" alt="LunenDev" class="logo-text">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home nav-icon"></i> Inicio</a></li>
+        <li><a href="servicios.html" class="active"><i class="fas fa-laptop-code nav-icon"></i> Servicios</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-users nav-icon"></i> Nosotros</a></li>
+        <li><a href="proyectos.html"><i class="fas fa-folder-open nav-icon"></i> Proyectos</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope nav-icon"></i> Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </nav>
 
-    <div class="slide card fade-in" style="display:none;">
-      <h3>Desarrollo Web</h3>
-      <p>Sitios rápidos, modernos y responsive.</p>
+  <section class="hero hero-centered">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones digitales diseñadas para impulsar tu negocio al siguiente nivel</p>
+      </div>
     </div>
+  </section>
 
-    <div class="slide card fade-in" style="display:none;">
-      <h3>SEO</h3>
-      <p>Posicionamiento en Google.</p>
+  <section class="section section-light">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card-compact fade-in">
+          <div class="icon"><i class="fas fa-rocket"></i></div>
+          <h3>Landing Pages</h3>
+          <p>Páginas de alto impacto diseñadas para convertir visitantes en clientes.</p>
+        </div>
+        <div class="service-card-compact fade-in">
+          <div class="icon"><i class="fas fa-cogs"></i></div>
+          <h3>Automatizaciones</h3>
+          <p>Optimiza tus procesos empresariales con soluciones automatizadas.</p>
+        </div>
+        <div class="service-card-compact fade-in">
+          <div class="icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Páginas Web</h3>
+          <p>Sitios web profesionales, rápidos y totalmente responsive.</p>
+        </div>
+        <div class="service-card-compact fade-in">
+          <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
+          <h3>Soluciones Personalizadas</h3>
+          <p>Desarrollamos herramientas a medida para las necesidades de tu negocio.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <button class="arrow right" onclick="cambiarSlide(1)">▶</button>
+  <section class="section">
+    <div class="container">
+      <div class="split-section">
+        <div class="split-content fade-in">
+          <h2>¿Por qué trabajar con nosotros?</h2>
+          <p>No solo creamos páginas web. Creamos experiencias digitales que generan resultados reales para tu negocio.</p>
+          <p>Cada proyecto es un reto que abordamos con creatividad, estrategia y las últimas tecnologías del mercado.</p>
+          <a href="contacto.html" class="btn btn-primary" style="margin-top: var(--space-lg);">Hablemos de tu proyecto</a>
+        </div>
+        <div class="split-image fade-in">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="Desarrollo web">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </div>
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Contáctanos y hagamos realidad tu idea</p>
+        <a href="contacto.html" class="btn btn-dark" style="margin-top: var(--space-lg);">Contactar</a>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 LunenDev. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-<script src="script.js"></script>
+  <a href="https://wa.me/573185990771" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp" style="font-size: 32px;"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
